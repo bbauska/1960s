@@ -1,4 +1,4 @@
-/** css/styles.css of bbauska/1970s creating 1960s.bauska.org */
+/** css/styles.css of bbauska/1960s creating 1960s.bauska.org */
 body {
   background: black;
   display: flex;
@@ -44,7 +44,7 @@ video, iframe {
   max-height: 100%;
   filter: contrast(1.2) brightness(1.1);
 }
-/**  background-image: url(https://github.com/bbauska/1970s/blob/main/images/Television_static.gif);  **/
+/**  background-image: url(https://github.com/bbauska/1960s/blob/main/images/Television_static.gif);  **/
 .glitch {
   pointer-events: none;
   position: absolute;
