@@ -110,9 +110,9 @@ https://youtu.be/rJSNuEPVV0o underdog 1965
 rempved this: https://youtu.be/qxeDJ35IA34 fantastic voyage
 https://youtu.be/muJlKe6A9fg the fugitive
 https://youtu.be/cnWDXA4MQHE the jetsons
-https://youtu.be/Wmrjy7itGY0 foghorn leghorn
+removed this: https://youtu.be/Wmrjy7itGY0 foghorn leghorn
 */
-const videoIds = ["o2ObCoCm61s", "QbrN9qIM1uk", "5U34eBAPhBM", "rJSNuEPVV0o", "muJlKe6A9fg", "cnWDXA4MQHE", "Wmrjy7itGY0"];
+const videoIds = ["o2ObCoCm61s", "QbrN9qIM1uk", "5U34eBAPhBM", "rJSNuEPVV0o", "muJlKe6A9fg", "cnWDXA4MQHE"];
 let currentVideoIndex = 0;
 const iframe = document.getElementById("ytplayer");
 const snowEffect = document.querySelector(".snow-effect");
@@ -127,5 +127,5 @@ function switchToNextVideo() {
 }
 
 iframe.addEventListener("load", () => {
-  setTimeout(switchToNextVideo, 18000); 
+  setTimeout(switchToNextVideo, 23000); 
 });
