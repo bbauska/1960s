@@ -105,12 +105,10 @@ const vcrEffect = new VCREffect(canvas, {
 /*
 https://youtu.be/o2ObCoCm61s  get smart 1967
 https://youtu.be/QbrN9qIM1uk dragnet 1967
-https://youtu.be/5U34eBAPhBM rocky & bullwinkle show
+https://youtu.be/5U34eBAPhBM rocky & bullwinkle show 1959-1964
 https://youtu.be/rJSNuEPVV0o underdog 1965
-rempved this: https://youtu.be/qxeDJ35IA34 fantastic voyage
-https://youtu.be/muJlKe6A9fg the fugitive
-https://youtu.be/cnWDXA4MQHE the jetsons
-removed this: https://youtu.be/Wmrjy7itGY0 foghorn leghorn
+https://youtu.be/muJlKe6A9fg the fugitive 1963-1967
+https://youtu.be/cnWDXA4MQHE the jetsons 1962-1963
 */
 const videoIds = ["o2ObCoCm61s", "QbrN9qIM1uk", "5U34eBAPhBM", "rJSNuEPVV0o", "muJlKe6A9fg", "cnWDXA4MQHE"];
 let currentVideoIndex = 0;
