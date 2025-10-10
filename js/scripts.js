@@ -103,7 +103,7 @@ const vcrEffect = new VCREffect(canvas, {
   blur: 1
 });
 /*
-https://youtu.be/o2ObCoCm61s  get smart 1967
+https://youtu.be/o2ObCoCm61s get smart 1967
 https://youtu.be/QbrN9qIM1uk dragnet 1967
 https://youtu.be/5U34eBAPhBM rocky & bullwinkle show 1959-1964
 https://youtu.be/rJSNuEPVV0o underdog 1965
