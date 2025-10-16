@@ -102,15 +102,23 @@ const vcrEffect = new VCREffect(canvas, {
   fps: 60,
   blur: 1
 });
-/*
-https://youtu.be/o2ObCoCm61s get smart 1967
-https://youtu.be/QbrN9qIM1uk dragnet 1967
-https://youtu.be/5U34eBAPhBM rocky & bullwinkle show 1959-1964
-https://youtu.be/rJSNuEPVV0o underdog 1965
-https://youtu.be/muJlKe6A9fg the fugitive 1963-1967
-https://youtu.be/cnWDXA4MQHE the jetsons 1962-1963
-*/
-const videoIds = ["o2ObCoCm61s", "QbrN9qIM1uk", "5U34eBAPhBM", "rJSNuEPVV0o", "muJlKe6A9fg", "cnWDXA4MQHE"];
+
+/**
+https://www.youtube.com/embed/o2ObCoCm61s?autoplay=1&controls=0&loop=1&mute=1
+1960's
+#1.  https://youtu.be/o2ObCoCm61s = get smart (1965-1970)
+#2.  https://youtu.be/MfwZa5rRRNQ = dragnet (1967-1970)
+#3.  https://youtu.be/fLCC2MwgTIY = rocky & bullwinkle show 1959-1964
+#4.  https://youtu.be/qHej4ZqZDwo?t=6 = underdog (1964-1973)
+#5.  https://youtu.be/S5YAg-oVpE0 = the fugitive (1963-1967)
+#6.  https://youtu.be/0JQbeCAlF6s = the jetsons 1962-1963
+#7.  https://youtu.be/uq7noaMwLfg = flintstones (1960-1966)
+#8.  https://youtu.be/hdjL8WXjlGI = star trek (1966-1969)
+#9.  https://youtu.be/OvE9zJgm8OY = beverly hillbillies (1962-1971)
+#10. https://youtu.be/cfawtDT945o = adams family (1964-1966)
+**/
+const videoIds = ["o2ObCoCm61s", "MfwZa5rRRNQ", "fLCC2MwgTIY", "qHej4ZqZDwo?t=6", "S5YAg-oVpE0", 
+                  "0JQbeCAlF6s", "uq7noaMwLfg", "hdjL8WXjlGI", "OvE9zJgm8OY", "cfawtDT945o"];
 let currentVideoIndex = 0;
 const iframe = document.getElementById("ytplayer");
 const snowEffect = document.querySelector(".snow-effect");
