@@ -117,7 +117,7 @@ https://www.youtube.com/embed/o2ObCoCm61s?autoplay=1&controls=0&loop=1&mute=1
 #9.  https://youtu.be/OvE9zJgm8OY = beverly hillbillies (1962-1971)
 #10. https://youtu.be/cfawtDT945o = adams family (1964-1966)
 **/
-const videoIds = ["o2ObCoCm61s", "MfwZa5rRRNQ", "fLCC2MwgTIY", "qHej4ZqZDwo?t=6", "S5YAg-oVpE0", 
+const videoIds = ["o2ObCoCm61s", "MfwZa5rRRNQ", "fLCC2MwgTIY", "qHej4ZqZDwo", "S5YAg-oVpE0", 
                   "0JQbeCAlF6s", "uq7noaMwLfg", "hdjL8WXjlGI", "OvE9zJgm8OY", "cfawtDT945o"];
 let currentVideoIndex = 0;
 const iframe = document.getElementById("ytplayer");
