@@ -106,19 +106,21 @@ const vcrEffect = new VCREffect(canvas, {
 /**
 https://www.youtube.com/embed/o2ObCoCm61s?autoplay=1&controls=0&loop=1&mute=1
 1960's
-#1.  https://youtu.be/o2ObCoCm61s = get smart (1965-1970)
-#2.  https://youtu.be/MfwZa5rRRNQ = dragnet (1967-1970)
-#3.  https://youtu.be/fLCC2MwgTIY = rocky & bullwinkle show (1959-1964)
-#4.  https://youtu.be/Pa1fH0SvGPg = underdog (1964-1973)
-#5.  https://youtu.be/S5YAg-oVpE0 = the fugitive (1963-1967)
-#6.  https://youtu.be/tTq6Tofmo7E = the jetsons (1962-1963)
-#7.  https://youtu.be/HJI4uqkv2bU = flintstones (1960-1966)
-#8.  https://youtu.be/hdjL8WXjlGI = star trek (1966-1969)
-#9.  https://youtu.be/kCfGVLKr5oM = beverly hillbillies (1962-1971)
-#10. https://youtu.be/cfawtDT945o = adams family (1964-1966)
+#1.  https://www.youtube.com/watch?v=voU4ZjyWoSE = get smart (1965-1970)
+#2.  https://www.youtube.com/watch?v=nx5GwULPU90 = dragnet (1967-1970)
+#3.  https://www.youtube.com/watch?v=fLCC2MwgTIY = rocky & bullwinkle show (1959-1964)
+#4.  https://www.youtube.com/watch?v=Pa1fH0SvGPg = underdog (1964-1973)
+#5.  https://www.youtube.com/watch?v=DBXb_6-2zOw = the fugitive (1963-1967)
+#6.  https://www.youtube.com/watch?v=tTq6Tofmo7E = the jetsons (1962-1963)
+#7.  https://www.youtube.com/watch?v=qan5Qgkdua0 = flintstones (1960-1966)
+#8.  https://www.youtube.com/watch?v=B594jsKbsss = star trek (1966-1969)
+#9.  https://www.youtube.com/watch?v=kCfGVLKr5oM = beverly hillbillies (1962-1971)
+#10. https://www.youtube.com/watch?v=cfawtDT945o = adams family (1964-1966)
+#11. https://www.youtube.com/watch?v=1jgE-lrfZ3k = batman (1966-1968)
+#12. https://www.youtube.com/watch?v=ORbseYAkzRM = twilight zone (1959-1964)
 **/
-const videoIds = ["o2ObCoCm61s", "MfwZa5rRRNQ", "fLCC2MwgTIY", "Pa1fH0SvGPg", "S5YAg-oVpE0", 
-                  "tTq6Tofmo7E", "HJI4uqkv2bU", "hdjL8WXjlGI", "kCfGVLKr5oM", "cfawtDT945o"];
+const videoIds = ["voU4ZjyWoSE", "nx5GwULPU90", "fLCC2MwgTIY", "Pa1fH0SvGPg", "DBXb_6-2zOw", "tTq6Tofmo7E", 
+                  "qan5Qgkdua0", "B594jsKbsss", "kCfGVLKr5oM", "cfawtDT945o", "1jgE-lrfZ3k", "ORbseYAkzRM"];
 let currentVideoIndex = 0;
 const iframe = document.getElementById("ytplayer");
 const snowEffect = document.querySelector(".snow-effect");
@@ -133,5 +135,5 @@ function switchToNextVideo() {
 }
 
 iframe.addEventListener("load", () => {
-  setTimeout(switchToNextVideo, 22000);  /* 22 seconds */
+  setTimeout(switchToNextVideo, 12000);  /* 12 seconds */
 });
