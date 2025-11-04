@@ -114,11 +114,11 @@ https://www.youtube.com/embed/o2ObCoCm61s?autoplay=1&controls=0&loop=1&mute=1
 #6.  https://youtu.be/tTq6Tofmo7E = the jetsons (1962-1963)
 #7.  https://youtu.be/HJI4uqkv2bU = flintstones (1960-1966)
 #8.  https://youtu.be/hdjL8WXjlGI = star trek (1966-1969)
-#9.  https://youtu.be/OvE9zJgm8OY = beverly hillbillies (1962-1971)
+#9.  https://youtu.be/kCfGVLKr5oM = beverly hillbillies (1962-1971)
 #10. https://youtu.be/cfawtDT945o = adams family (1964-1966)
 **/
 const videoIds = ["o2ObCoCm61s", "MfwZa5rRRNQ", "fLCC2MwgTIY", "D3kaZMLfkWU", "S5YAg-oVpE0", 
-                  "tTq6Tofmo7E", "HJI4uqkv2bU", "hdjL8WXjlGI", "OvE9zJgm8OY", "cfawtDT945o"];
+                  "tTq6Tofmo7E", "HJI4uqkv2bU", "hdjL8WXjlGI", "kCfGVLKr5oM", "cfawtDT945o"];
 let currentVideoIndex = 0;
 const iframe = document.getElementById("ytplayer");
 const snowEffect = document.querySelector(".snow-effect");
