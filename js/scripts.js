@@ -108,7 +108,7 @@ https://www.youtube.com/embed/o2ObCoCm61s?autoplay=1&controls=0&loop=1&mute=1
 1960's
 #1.  https://youtu.be/o2ObCoCm61s = get smart (1965-1970)
 #2.  https://youtu.be/MfwZa5rRRNQ = dragnet (1967-1970)
-#3.  https://youtu.be/fLCC2MwgTIY = rocky & bullwinkle show 1959-1964
+#3.  https://youtu.be/fLCC2MwgTIY = rocky & bullwinkle show (1959-1964)
 #4.  https://youtu.be/qHej4ZqZDwo?t=6 = underdog (1964-1973)
 #5.  https://youtu.be/S5YAg-oVpE0 = the fugitive (1963-1967)
 #6.  https://youtu.be/0JQbeCAlF6s = the jetsons 1962-1963
@@ -127,11 +127,11 @@ function switchToNextVideo() {
   snowEffect.style.opacity = 1;
   setTimeout(() => {
     currentVideoIndex = (currentVideoIndex + 1) % videoIds.length;
-    iframe.src = `https://www.youtube.com/embed/${videoIds[currentVideoIndex]}?autoplay=1&controls=0&loop=1&mute=1`;
+    iframe.src = `https://www.youtube.com/embed/${videoIds[currentVideoIndex]}?autoplay=1&controls=0&loop=0&mute=1`;
     snowEffect.style.opacity = 0;
   }, 2000); // 2 seconds of static before switching
 }
 
 iframe.addEventListener("load", () => {
-  setTimeout(switchToNextVideo, 20000); 
+  setTimeout(switchToNextVideo, 10000); 
 });
