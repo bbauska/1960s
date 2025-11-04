@@ -111,7 +111,7 @@ https://www.youtube.com/embed/o2ObCoCm61s?autoplay=1&controls=0&loop=1&mute=1
 #3.  https://youtu.be/fLCC2MwgTIY = rocky & bullwinkle show (1959-1964)
 #4.  https://youtu.be/qHej4ZqZDwo = underdog (1964-1973)
 #5.  https://youtu.be/S5YAg-oVpE0 = the fugitive (1963-1967)
-#6.  https://youtu.be/0JQbeCAlF6s = the jetsons 1962-1963
+#6.  https://youtu.be/0JQbeCAlF6s = the jetsons (1962-1963)
 #7.  https://youtu.be/uq7noaMwLfg = flintstones (1960-1966)
 #8.  https://youtu.be/hdjL8WXjlGI = star trek (1966-1969)
 #9.  https://youtu.be/OvE9zJgm8OY = beverly hillbillies (1962-1971)
