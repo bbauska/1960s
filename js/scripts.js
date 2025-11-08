@@ -119,6 +119,7 @@ https://www.youtube.com/embed/o2ObCoCm61s?autoplay=1&controls=0&loop=1&mute=1
 #11. https://www.youtube.com/watch?v=1jgE-lrfZ3k = batman (1966-1968)
 #12. https://www.youtube.com/watch?v=ORbseYAkzRM = twilight zone (1959-1964)
 **/
+
 const videoIds = ["voU4ZjyWoSE", "nx5GwULPU90", "fLCC2MwgTIY", "Pa1fH0SvGPg", "DBXb_6-2zOw", "tTq6Tofmo7E", 
                   "qan5Qgkdua0", "B594jsKbsss", "kCfGVLKr5oM", "cfawtDT945o", "1jgE-lrfZ3k", "ORbseYAkzRM"];
 let currentVideoIndex = 0;
@@ -135,5 +136,5 @@ function switchToNextVideo() {
 }
 
 iframe.addEventListener("load", () => {
-  setTimeout(switchToNextVideo, 22000);  /* 12 seconds */
+  setTimeout(switchToNextVideo, 12000);  /* 12 seconds */
 });
