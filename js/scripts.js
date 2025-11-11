@@ -17,10 +17,8 @@ class VCREffect {
       miny2: 220,
       num: 70
     }, options);
-
-        this.init();
+    this.init();
   }
-
   init() {
     this.canvas.width = window.innerWidth;
     this.canvas.height = window.innerHeight;
@@ -28,16 +26,13 @@ class VCREffect {
     this.canvas.style.top = "0";
     this.canvas.style.left = "0";
     this.canvas.style.opacity = this.config.opacity;
-
     this.generateVCRNoise();
     window.addEventListener("resize", () => this.onResize());
   }
-
   onResize() {
     this.canvas.width = window.innerWidth;
     this.canvas.height = window.innerHeight;
   }
-
   generateVCRNoise() {
     if (this.config.fps >= 60) {
       cancelAnimationFrame(this.vcrInterval);
@@ -53,15 +48,12 @@ class VCREffect {
       }, 1000 / this.config.fps);
     }
   }
-
   renderTrackingNoise(radius = 2) {
     const { canvas, ctx, config } = this;
     let { miny, miny2, num } = config;
-
     canvas.style.filter = `blur(${config.blur}px)`;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = `#fff`;
-
     ctx.beginPath();
     for (let i = 0; i <= num; i++) {
       let x = Math.random() * canvas.width;
@@ -70,18 +62,15 @@ class VCREffect {
       ctx.fillRect(x, y1, radius, radius);
       ctx.fillRect(x, y2, radius, radius);
       ctx.fill();
-
       this.renderTail(ctx, x, y1, radius);
       this.renderTail(ctx, x, y2, radius);
     }
     ctx.closePath();
   }
-
   renderTail(ctx, x, y, radius) {
     const n = getRandomInt(1, 50);
     const dirs = [1, -1];
     let dir = dirs[Math.floor(Math.random() * dirs.length)];
-
     for (let i = 0; i < n; i++) {
       let r = getRandomInt(radius - 0.01, radius);
       let dx = getRandomInt(1, 4) * dir;
@@ -106,13 +95,13 @@ const vcrEffect = new VCREffect(canvas, {
 /**
 https://www.youtube.com/embed/o2ObCoCm61s?autoplay=1&controls=0&loop=1&mute=1
 1960's
-#1.  https://www.youtube.com/watch?v=voU4ZjyWoSE = get smart (1965-1970)
-#2.  https://www.youtube.com/watch?v=nx5GwULPU90 = dragnet (1967-1970)
-#3.  https://www.youtube.com/watch?v=fLCC2MwgTIY = rocky & bullwinkle show (1959-1964)
-#4.  https://www.youtube.com/watch?v=Pa1fH0SvGPg = underdog (1964-1973)
-#5.  https://www.youtube.com/watch?v=DBXb_6-2zOw = the fugitive (1963-1967)
-#6.  https://www.youtube.com/watch?v=tTq6Tofmo7E = the jetsons (1962-1963)
-#7.  https://www.youtube.com/watch?v=qan5Qgkdua0 = flintstones (1960-1966)
+#1.  https://www.youtube.com/watch?v=qan5Qgkdua0 = flintstones (1960-1966)
+#2.  https://www.youtube.com/watch?v=voU4ZjyWoSE = get smart (1965-1970)
+#3.  https://www.youtube.com/watch?v=nx5GwULPU90 = dragnet (1967-1970)
+#4.  https://www.youtube.com/watch?v=fLCC2MwgTIY = rocky & bullwinkle show (1959-1964)
+#5.  https://www.youtube.com/watch?v=Pa1fH0SvGPg = underdog (1964-1973)
+#6.  https://www.youtube.com/watch?v=DBXb_6-2zOw = the fugitive (1963-1967)
+#7.  https://www.youtube.com/watch?v=tTq6Tofmo7E = the jetsons (1962-1963)
 #8.  https://www.youtube.com/watch?v=B594jsKbsss = star trek (1966-1969)
 #9.  https://www.youtube.com/watch?v=kCfGVLKr5oM = beverly hillbillies (1962-1971)
 #10. https://www.youtube.com/watch?v=cfawtDT945o = adams family (1964-1966)
@@ -120,8 +109,8 @@ https://www.youtube.com/embed/o2ObCoCm61s?autoplay=1&controls=0&loop=1&mute=1
 #12. https://www.youtube.com/watch?v=ORbseYAkzRM = twilight zone (1959-1964)
 **/
 
-const videoIds = ["voU4ZjyWoSE", "nx5GwULPU90", "fLCC2MwgTIY", "Pa1fH0SvGPg", "DBXb_6-2zOw", "tTq6Tofmo7E", 
-                  "qan5Qgkdua0", "B594jsKbsss", "kCfGVLKr5oM", "cfawtDT945o", "1jgE-lrfZ3k", "ORbseYAkzRM"];
+const videoIds = ["qan5Qgkdua0", "voU4ZjyWoSE", "nx5GwULPU90", "fLCC2MwgTIY", "Pa1fH0SvGPg", "DBXb_6-2zOw",
+  "tTq6Tofmo7E", "B594jsKbsss", "kCfGVLKr5oM", "cfawtDT945o", "1jgE-lrfZ3k", "ORbseYAkzRM"];
 let currentVideoIndex = 0;
 const iframe = document.getElementById("ytplayer");
 const snowEffect = document.querySelector(".snow-effect");
